@@ -16,9 +16,20 @@
 
     <CheckBox
         android:id="@+id/checkVIP"
+        android:layout_marginTop="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="¿Eres VIP?"
+        />
+
+    <Button
+        android:id="@+id/buttonContinue"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continuar"
+        android:background="@color/teal_700"
+
         />
 
 
