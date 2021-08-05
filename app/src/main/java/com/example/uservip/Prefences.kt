@@ -24,14 +24,21 @@ class Prefences(val context: Context) {
      * Permite guardar la seleccion del check
      */
     fun saveVIP(vip: Boolean) {
-        storage.edit().putBoolean(SHARED_VIP,vip).apply()
+        storage.edit().putBoolean(SHARED_VIP, vip).apply()
     }
 
     /**
-     * Permite leer los valores del archivo
+     * Permite leer los valores de name del archivo
      */
-    fun getName(){
-        storage.getString(SHARED_USER_NAME,"")
+    fun getName(): String {
+        return storage.getString(SHARED_USER_NAME, "")!!
+    }
+
+    /**
+     * Permite leer los valores vip del archivo
+     */
+    fun getVIP(): Boolean {
+        return storage.getBoolean(SHARED_VIP, false)
     }
 
 }
